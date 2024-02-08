@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-world-server-service
+spec:
+  selector:
+    app: hello-world-server
+  ports:
+    - name: http
+      port: 8008
+      targetPort: 8008
